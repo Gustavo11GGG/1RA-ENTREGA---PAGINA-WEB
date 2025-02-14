@@ -45,6 +45,28 @@ main {
   flex-direction: column;
 }
 
+.news-section-deportes,
+.news-section-policiales,
+.news-section-politica {
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 15px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
 .grid-imagenes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -66,12 +88,6 @@ main {
   .grid-imagenes {
     grid-template-columns: 1fr;
   }
-  .news-section-deportes,
-  .news-section-policiales,
-  .news-section-politica {
-    height: auto;
-    padding: 10px;
-  }
   nav {
     flex-direction: column;
   }
@@ -80,25 +96,9 @@ main {
   .grid-imagenes {
     grid-template-columns: repeat(2, 1fr);
   }
-  .news-section-deportes,
-  .news-section-policiales,
-  .news-section-politica {
-    height: auto;
-    padding: 15px;
-  }
-  nav {
-    flex-direction: row;
-    gap: 20px;
-  }
 }
 @media (min-width: 1025px) {
   .grid-imagenes {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .news-section-deportes,
-  .news-section-policiales,
-  .news-section-politica {
-    height: 600px;
-    padding: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

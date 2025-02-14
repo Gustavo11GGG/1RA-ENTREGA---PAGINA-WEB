@@ -55,6 +55,29 @@ main {
   flex-direction: column;
 }
 
+// Estilos para las secciones de noticias
+.news-section-deportes,
+.news-section-policiales,
+.news-section-politica {
+  text-align: center; // Centra el texto
+  margin: 20px 0; // Espaciado entre secciones
+  width: 100%; // Asegura que el ancho sea 100%
+  max-width: $max-width; // Limita el ancho máximo
+  padding: 0 15px; // Agrega un poco de padding lateral
+}
+
+.image {
+  display: flex; // Usar flexbox para centrar la imagen
+  justify-content: center; // Centra horizontalmente
+  margin: 0 auto; // Asegura que el contenedor esté centrado
+}
+
+.image img {
+  width: 100%; // Asegura que la imagen ocupe el 100% del contenedor
+  height: auto; // Mantiene la proporción de la imagen
+  max-width: 100%; // Limita el ancho máximo al 100%
+}
+
 // Estilos para las imágenes en grid
 .grid-imagenes {
   display: grid;
@@ -79,13 +102,6 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .news-section-deportes,
-  .news-section-policiales,
-  .news-section-politica {
-    height: auto;
-    padding: 10px;
-  }
-
   nav {
     flex-direction: column;
   }
@@ -95,29 +111,10 @@ main {
   .grid-imagenes {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .news-section-deportes,
-  .news-section-policiales,
-  .news-section-politica {
-    height: auto;
-    padding: 15px;
-  }
-
-  nav {
-    flex-direction: row;
-    gap: 20px;
-  }
 }
 
 @media (min-width: 1025px) {
   .grid-imagenes {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .news-section-deportes,
-  .news-section-policiales,
-  .news-section-politica {
-    height: 600px;
-    padding: 20px;
   }
 }
